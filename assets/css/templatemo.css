@@ -1,0 +1,623 @@
+/*
+
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Carousel Hero
+9. Carousel Brand
+10. Services
+11. Contact map
+12. Footer
+13. Small devices (landscape phones, 576px and up)
+14. Medium devices (tablets, 768px and up)
+15. Large devices (desktops, 992px and up)
+16. Extra large devices (large desktops, 1200px and up)
+--------------------------------------------- */
+
+
+
+
+/* Typography */
+body, ul, li, p, a, label, input, div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+  color: black !important;
+}
+.h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+}
+/* General */
+.logo { font-weight: 500 !important;}
+.text-warning {  color: #ede861 !important;}
+.text-muted { color: #bcbcbc !important;}
+.text-success { color: #050505 !important;}
+.text-light { color: #cfd6e1 !important;}
+.bg-dark { background-color: #6F4E37 !important;}
+.bg-light { background-color: #e9eef5 !important;}
+.bg-black { background-color: #1d242d !important;}
+.bg-success { background-color: #59ab6e !important;}
+.btn-success {
+  background-color: #6F4E37  !important;
+  border-color: #6F4E37 !important;
+}
+.pagination .page-link:hover {color: #000;}
+.pagination .page-link:hover, .pagination .page-link.active {
+  background-color: #69bb7e;
+  color: #fff;
+}
+/* Nav */
+#templatemo_nav_top { min-height: 40px;}
+#templatemo_nav_top * { font-size: .9em !important;}
+#templatemo_main_nav a { color: #212934;}
+#templatemo_main_nav a:hover { color: #69bb7e;}
+#templatemo_main_nav .navbar .nav-icon { margin-right: 20px;}
+
+/* Hero Carousel */
+#template-mo-zay-hero-carousel { background: #efefef !important;}
+/* Accordion */
+.templatemo-accordion a { color: #000;}
+.templatemo-accordion a:hover { color: #333d4a;}
+/* Shop */
+.shop-top-menu a:hover { color: #69bb7e !important;}
+/* Product */
+.product-wap { box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);}
+.product-wap .product-color-dot.color-dot-red { background:#f71515;}
+.product-wap .product-color-dot.color-dot-blue { background:#6db4fe;}
+.product-wap .product-color-dot.color-dot-black { background:#000000;}
+.product-wap .product-color-dot.color-dot-light { background:#e0e0e0;}
+.product-wap .product-color-dot.color-dot-green { background:#0bff7e;}
+.card.product-wap .card .product-overlay {
+  background: rgba(0,0,0,.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.card.product-wap a { color: #000;}
+#carousel-related-product .slick-slide:focus { outline: none !important;}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* Header */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it stays above the carousel */
+  background: transparent; /* Semi-transparent background */
+  box-shadow: none !important; /* Remove any shadow */
+  border-bottom: none !important; /* Remove any border */
+  transition: background-color 0.1s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(18, 17, 17, 0.8); /* Add a background on scroll */
+}
+
+.navbar .nav-link {
+  color: white; /* Ensure the text is visible over the images */
+}
+
+.nav-item a {
+  color: white !important; /* Force text color to white */
+  text-decoration: none !important; /* Remove underline */
+  font-weight: bold !important;
+}
+
+.nav-item a:hover {
+  color: #ccc; /* Optional: Change color on hover */
+}
+
+.navbar .navbar-brand {
+  color: white !important; /* Customize logo color */
+}
+
+.navbar .nav-icon i {
+  color: white !important; /* Icon color */
+}
+
+.nav-item.dropdown {
+  margin-left: 15px;
+  color: white !important;
+}
+
+.nav-link.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link.dropdown-toggle i {
+  margin-right: 5px;
+}
+
+#selectedCurrency {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  color: white !important;
+}
+
+.dropdown-item {
+  cursor: pointer;
+
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Shop Header */
+.shop-header {
+  background-color: rgb(46, 26, 2) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  position: fixed !important; /* Make the header fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Ensure it stays on top */
+}
+
+.contact-header {
+  background-color: rgb(46, 26, 2) !important;
+}
+
+.contact-content {
+  padding-top: 120px !important;
+}
+
+/* Brand */
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: .5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+/* Carousel Hero */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 30rem; /* Adjustable height */
+  overflow: hidden; /* Hides slides outside the container */
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+.carousel-slide {
+  min-width: 100%; /* Each slide takes full width */
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensures image covers slide area */
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers text */
+  text-align: center;
+  color: white;
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s ease-in-out; /* Fade effect */
+}
+
+.hero-text h1{
+  font-size: 48px;
+}
+
+.hero-text .shop-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(43, 11, 11, 0.2); 
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.hero-text .shop-now-btn:hover {
+  background-color: #000;
+  color: rgb(13, 1, 1);
+}
+
+
+.hero-text.active {
+  opacity: 1; /* Visible when active */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*Gallery*/
+.product-box {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 15px; /* Adjust to fit the buttons */
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.static-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.animated-img {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-box:hover .static-img {
+  display: none;
+}
+
+.product-box:hover .animated-img {
+  display: block;
+}
+
+.product-price {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin-top: 10px; /* Adjust for spacing */
+}
+
+/* Contact */
+.contact__form {
+	padding: 60px 0;
+	background-color :#F0F2F5;
+}
+
+.contact__form h5 {
+	color: #111111;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.contact__form form{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form form input {
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #444444;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.contact__form form input::-webkit-input-placeholder {
+	color: #444444;
+}
+
+.contact__form form input::-moz-placeholder {
+	color: #444444;
+}
+
+.contact__form form input:-ms-input-placeholder {
+	color: #444444;
+}
+
+.contact__form form input::-ms-input-placeholder {
+	color: #444444;
+}
+
+.contact__form form input::placeholder {
+	color: #444444;
+}
+.contact__form form input,
+.contact__form form textarea {
+	height: 50px;
+	width: calc(100% - 22px);
+	padding-left: 20px;
+	font-size: 14px;
+	color: #444444;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	margin-bottom: 20px; 
+	box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.contact__form form textarea {
+	height: 130px;
+	/* width: 100%; */
+	/* padding-left: 20px; */
+	padding-top: 12px;
+
+	resize: none;
+}
+
+.contact__form form button {
+	background-color: rgb(46, 26, 2); /* Use your desired red color */
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold; /* Make the button text bold */
+	transition: background-color 0.3s ease; /* Add a smooth hover transition */
+}
+
+
+.contact__map {
+	height: 780px;
+}
+
+.contact__map iframe {
+	width: 100%;
+}
+
+.contact-info {
+	background-color: #ffffff;
+	padding: 60px 0;
+}
+
+.contact-info-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.contact-info-item {
+	background-color: rgb(46, 26, 2);
+	color: #ffffff;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+	transition: background-color 0.3s ease;
+}
+.contact-info-item:hover {
+	background-color: black;
+}
+
+.contact-info-item .icon {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.contact-info-item h3 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.contact-info-item p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: white;
+}
+
+.map {
+	padding: 60px 0;
+}
+
+.shipping-address {
+    margin-top: 20px; 
+}
+
+.shipping-address h6 {
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.shipping-address input,
+.shipping-address select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; /* Optional for rounded corners */
+}
+
+.shipping-address select {
+    -webkit-appearance: none; /* Improve select appearance in some browsers */
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+#success-message {
+	background-color: rgb(46, 26, 2); /* Light green for success */
+	border-color: #c3e6cb;
+	color: rgb(46, 26, 2);
+	padding: 10px 15px; 
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+#success-message p{
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+	.contact-info-grid {
+		grid-template-columns: 1fr;
+	}
+}
+/* Contact end */
+
+Services */
+.services-icon-wap {transition: .3s;}
+.services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
+.services-icon-wap:hover {background: rgb(46, 26, 2);}
+/* Contact map */
+.leaflet-control a, .leaflet-control { font-size: 10px !important;}
+.form-control { border: 1px solid #e8e8e8;}
+/* Footer */
+#tempaltemo_footer a { color: #dcdde1;}
+#tempaltemo_footer a:hover { color: rgb(46, 26, 2);}
+#tempaltemo_footer ul.footer-link-list li { padding-top: 10px;}
+#tempaltemo_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#tempaltemo_footer ul.footer-icons li:hover {
+  background-color: #cfd6e1;
+  transition: .5s;
+}
+#tempaltemo_footer ul.footer-icons li:hover i {
+  color: #212934;
+  transition: .5s;
+}
+#tempaltemo_footer .border-light { border-color: #2d343f !important;}
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+/* Add this to your 'custom.css' file */
+
+#product-carousel {
+  width: 100%; /* Make the carousel take full width */
+}
+
+#product-carousel .carousel-inner {
+  width: 100%; /* Make the carousel inner container take full width */
+}
+
+#product-carousel .carousel-item img {
+  width: 100%; /* Make the images inside the carousel items take full width */
+  height: auto; /* Keep the aspect ratio of the images */
+}
+
+/*---------------------
+  Breadcrumb
+-----------------------*/
+
+.breadcrumb-option {
+	padding-top: 35px;
+}
+
+.breadcrumb__links a {
+	font-size: 15px;
+	font-weight: 500;
+	color: #111111;
+	margin-right: 18px;
+	display: inline-block;
+	position: relative;
+}
+
+.breadcrumb__links a:after {
+	position: absolute;
+	right: -14px;
+	top: 0;
+	content: "";
+	font-family: "FontAwesome";
+}
+
+.breadcrumb__links a i {
+	margin-right: 5px;
+}
+
+.breadcrumb__links span {
+	font-size: 15px;
+	font-weight: 500;
+	color: #888888;
+	display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .tempaltemo-carousel .h1 { font-size: 1em !important;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #templatemo_main_nav .navbar-nav {max-width: 450px;}
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #templatemo_main_nav .navbar-nav {max-width: 550px;}
+  #template-mo-zay-hero-carousel .carousel-item {min-height: 30rem !important;}
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {font-size: 18px !important;}
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}

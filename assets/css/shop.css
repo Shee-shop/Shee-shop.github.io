@@ -1,0 +1,14 @@
+.navbar {
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    position: fixed; /* Make the header fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+  /* Add padding to the body to prevent content overlap */
+body {
+    padding-top: 70px; /* Adjust to match the height of your navbar */
+}
